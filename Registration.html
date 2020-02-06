@@ -4,6 +4,7 @@
 	<title>Registration Page</title>
 </head>
 <body>
+	<form>
 	<h2>Doner Information</h2>
 
 	First Name*<input type="text" name="firstName"><br>
@@ -12,23 +13,85 @@
 	Address 1*<input type="text" name="address1"><br>
 	Address 2<input type="text" name="address2"><br>
 	City*<input type="tex" name="city"><br>
-	State*<select>
+	State*<select name="state">
+		<option value="selectAState">Select A State</option>
 		<option value="dhaka">Dhaka</option>
 		<option value="chitagong">Chitagong</option>
 		<option value="sylhet">Sylhet</option>
 	</select><br>
 	Zip Code*<input type="text" name="zipCode"><br>
-	Country*<input type="text" name="country"><br>
+	Country*<select name="country">
+		<option value="selectAState">Select A Country</option>
+		<option value="dhaka">Dhaka</option>
+		<option value="chitagong">Chitagong</option>
+		<option value="sylhet">Sylhet</option>
+		<option value="nowakhali">nowakhali</option>
+	</select>
+	<br>
+
 	Phone<input type="text" name="phone"><br>
 	Fax<input type="text" name="fax"><br>
 	Email<input type="text" name="email"><br>
 	Donation Amount*<input type="radio" name="donationAmount" value="None">None 
-
 	<input type="radio" name="donationAmount" value="50">$50
 	<input type="radio" name="donationAmount" value="75">$75
 	<input type="radio" name="donationAmount" value="100"> $100
 	<input type="radio" name="donationAmount" value="250">$250
-	<input type="radio" name="donationAmount" value="other">Other   
+	<input type="radio" name="donationAmount" value="other">Other  
+	<br>
 
+	Other Amount $ <input type="text" name="otherAmount"><br>
+	Recurring Donation <input type="checkbox" name="recurringDonation" > I am interested in giving on a regular basis<br>
+	<br>
+
+	<h2>Honorarium and Memorial Donation Information</h2>
+
+	I would like to make this <input type="radio" name="donation"> To Honor<br>
+	<input type="radio" name="donation">In Memory of<br>
+
+	Name<input type="text" name="name"><br>
+	Acknowlede Donation to<input type="text" name="donationTo"><br>
+
+
+	Address <input type="text" name="address"><br>
+	City<input type="text" name="city2"><br>
+	State<select name="state2">
+		<option value="selectAState">Select A State</option>
+		<option value="dhaka">Dhaka</option>
+		<option value="chitagong">Chitagong</option>
+		<option value="sylhet">Sylhet</option>
+	</select><br>
+	Zip<input type="text" name="zip"><br>
+
+	<h1>Additional Information</h1>
+	Name<input type="text" name="name2"><br>
+	<input type="checkbox" name="aditional1" >I would like my gift to remain anonymous<br>
+	<input type="checkbox" name="aditional2">My employer offers a matching gift program.I will mail the matching gift from.<br>
+	<input type="checkbox" name="aditional3">Please save the cost of acknowledging this gift by not mailling a thnak you letter.<br>
+
+	Comments
+	<textarea rows="5" cols="50" >
+		
+	</textarea><br>
+	How may we contact you? <input type="checkbox" name="checkEmail">E-mail<br>
+	<input type="checkbox" name="postalMail">Postal Mail<br>
+	<input type="checkbox" name="telephone">Telephone<br>
+	<input type="checkbox" name="checkFax">Fax<br>
+
+	I would like to recive newsletters and information about special events by:<br>
+	<input type="checkbox" name="checkEmail2">E-mail<br>
+	<input type="checkbox" name="postalMail2">Postal Mail<br>
+
+	<br>
+
+	<input type="checkbox" name="info">
+	I would like information about colunteering with the<br>
+
+	<input type="reset" value ="Reset">
+
+	<input type="submit" value ="Continue">
+
+
+	</form>
 </body>
 </html>
